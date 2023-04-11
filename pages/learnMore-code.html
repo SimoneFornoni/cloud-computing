@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Code</h1>
+
+    <p class="more-info">I linguaggi utilizzati all'interno del progetto sono diversi. Iniziando da HTML e CSS che gettano le basi della struttura e dello stile della pagina, grazie anche all'aiuto di bootstrap, un framework che ha permesso insieme alle media query di rendere il sito responsive, ovvero accessibile dalla maggior parte dei dispositivi. Il linguaggio Javascript accompagnato da jQuery permette il cambiamento del contenuto di div.content all'interno della pagina index.php rendendo cosí l'applicazione web una single-page applicaiton, inoltre controlla che l'utente sia loggato tramite lo script isLogged.js, altrimenti viene reinviato alla pagina logIn.html. Grazie allo script redirect.js se la connessione viene effettuata con http questa viene reinviata a https. Per effettuare il login vengono richiesti nome utente e password, che tramite chiamata AJAX vengono passati al file logIn.php che con la variabile globale $_POST prende i dati in input ed effettua una query per controllare se esiste un utente con quelle credenziali. All'interno del database le password sono cifrate con sha256 cosí da renderle piú sicure, inoltre per l'esecuzione delle query in php si utilizza prepared statement.  </p>
+
+    <button role="button" class="btn btn-outline-primary rounded-pill" id="btnBack"><i class="fa-solid fa-arrow-left"></i></button>
+
+    <script src="js/backToHome.js"></script>
+</body>
+</html>

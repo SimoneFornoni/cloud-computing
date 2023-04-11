@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/logIn-style.css">
+    <script src="https://kit.fontawesome.com/e4f4aab979.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>logIn</title>
+</head>
+<body>        
+    <div class="container shadow-lg">
+        <h3 class="text-white"><i class="fa-solid fa-cloud fa-2xl"></i> <span class="title">Cloud Computing</span> </h3>
+        <p class="text-white intro">Accedi per saperne di piú sul progetto di Cloud Computing, powered by aws</p>
+        <div class="input-box">
+            <label for="username" class="text-white">Username</label>
+            <input type="text" class="form-control bg-dark rounded-pill text-white" name="username" id="in-username" maxlength="50" required>
+        </div>
+        <div class="input-box">
+            <label for="password" class="text-white">Password</label>
+            <input type="password" class="form-control bg-dark rounded-pill text-white" name="password" id="in-password" maxlength="20" required>
+        </div>
+        
+        <button type="submit" class="btn btn-outline-primary rounded-pill" id="btn-form">Sign Up</button>
+        
+        <div class="alert alert-danger" id="err-alert" role="alert"></div>
+    </div>
+    
+    <script src="../js/logIn.js"></script>
+    <script src="../js/redirect.js"></script>
+</body>
+</html>

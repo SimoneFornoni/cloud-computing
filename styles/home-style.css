@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+:root{
+    --bg-color: #2c292c;
+    --bg-secondary-color: #1a181a;
+    --main-color: #8716a3;
+    --secondary-color: #d33cad;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    color: white;
+
+    background-image: linear-gradient(
+        to right,
+        #9926c6 0%, 
+        #d72587 50%, 
+        #de3131 100%
+    );
+}
+
+.container{
+    background-color: var(--bg-color);
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 70%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+p{
+    text-align: center;
+}
+
+h3, h4, h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box{
+    background-color: var(--bg-secondary-color);
+    width: 60%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    display: block;
+
+}
+
+.box:hover{
+    transition: all .5s; 
+    transform: scale(1.1); 
+}
+
+hr{
+    border-width: 3px;
+    border-color: var(--secondary-color);
+    margin-top: -10px;
+}
+
+.info{
+    font-size: 14px;
+}
+
+.more-info{
+    font-size: 18px;
+    padding: 30px;
+}
+
+button{
+    --bs-btn-color: var(--main-color) !important;
+    --bs-btn-border-color: var(--main-color) !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--main-color) !important;
+    --bs-btn-hover-border-color: var(--main-color) !important;
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--main-color) !important;
+    --bs-btn-active-border-color: var(--main-color) !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--main-color) !important;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--main-color) !important;
+    --bs-gradient: none;
+}
+
+@media (max-width: 1260px){
+    .box{
+        width: 80%;
+    }
+
+    .intro{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px){
+    .info{
+        display: none;
+    }
+
+    .more-info{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 700px){
+    .more-info{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 525px){
+    .title{
+        font-size: 20px;
+    }
+
+    .title::before{
+        content: "\a";
+        white-space: pre;
+    }
+
+    .intro{
+        font-size: 13px;
+    }
+
+    .box{
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .box h4{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px){
+    .intro{
+        font-size: 11px;
+    }
+
+    .box h4{
+        font-size: 14px;
+        text-align: start;
+    }
+
+    .container{
+        padding: 20px;
+    }
+}

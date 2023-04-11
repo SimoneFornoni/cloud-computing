@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOCKER</h1>
+
+    <p class="more-info">Docker permette la virtualizzazione e l'isolazione dei vari servizi forniti dagli AWS, distribuendoli in dei container. Questo permette alle applicazioni di essere eseguite indipendentemente dall'ambiente e dal sistema operativo su cui si trovano. Le varie istanze di docker sono gestite tramite il file docker-compose.yml, nel quale si possono specificare le opzioni di configurazione dei container, come le porte, i volumi di dati e le variabili di ambiente. Sotto la voce services possiamo trovare i servizi utilizzati per il progetto. Il primo é un database, mantiene i dati tramite il dump nella cartella /db, che contiene all'interno le credenziali per l'accesso alle pagine web, gestito tramite phpMyAdmin, un'altra delle istanze di docker. Infine il servizio www rappresenta il server web e nginx che tramite certificato self-signed permette la connessione https. </p>
+
+    <button role="button" class="btn btn-outline-primary rounded-pill" id="btnBack"><i class="fa-solid fa-arrow-left"></i></button>
+
+    <script src="js/backToHome.js"></script>
+</body>
+</html>
